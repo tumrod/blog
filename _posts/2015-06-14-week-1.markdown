@@ -2,11 +2,30 @@
 layout: post
 title:  "Week1: Hello World!"
 date:   2015-06-14 16:37:16
-categories: jekyll update
+categories: posts
 ---
+Hello World,
 
-Hello World!
+I started off my first blog with “Hello World” because of two reasons: 1) the blog is published to the world; 2) generally it is the first thing we learned when we first programmed. 
 
-This is the beginning of the CS373 blog. I created the blog using gh-page branch connected to my github repository. This blog will be linked under my [portfolio website][website]. 
+On the first day of class, I felt overwhelming yet challenging by the amount of tools we have to learn within this 9-week class. Without knowing it, the first week passed by quickly and we already touched on `Mocha`, `UnitTest`, `Istanbul`, `Coverage`, `Travis CI`, and `PyDoc`. Though I have never used majority of these tools before, I started to incorporate them with my personal projects. I really like how the class is very practical that once I got home from the class, I can play with my new tools and toys that improve my codes.
 
-[website]: http://tipparatumrod.me 
+Despite the fact that I got a little bit nervous when professor Downing called me out in class this week, I learned to be more confident in my answer. In addition, I began to like how he called people out in class since it keeps everyone engaging and participating. It created a learning environment where everybody has to pay attention and to follow the train of thought at all time. 
+
+I have been using `Python 2.7` for 3 years and now it is time for me to distinguish between `Python-2` and `Python-3`. I found this [cheat sheet][py2py3] useful whenever I get a syntax error or an exception. 
+
+TravisCI is a continuous integration tool used to test the project. I have never used it before. In order to connect the private github repository with TravisCI, you have to go to [https://magnum.travis-ci.com/][travis1] instead of [https://travis-ci.org/profile/][travis2]. I have gone through the struggle of successfully build at travis-ci because of this ‘sudo: setuid root’ error. This error occurs because the sudo access has turned off on TravisCI Docker side for student package. The fix is very simple by adding this `sudo: required` to `.travis.yml` file. I read the information about this error from [travis-ci issue][issue] and [stackoverflow][stack].
+
+##tip-of-the-week
+
+* [learn git with this cheat sheet][gh-cheat]
+* [Python-2 VS Python-3 cheat sheet][py2py3]
+* Add ‘sudo: required’ to ‘.travis.yml’ when you have ‘sudo: setuid root’ error
+* If you already hosted your website using <username>.github.io, you can make a new repository for your blog and create a gh-pages branch to have your own blog hosting separately from your actual website.
+
+[travis1]: https://magnum.travis-ci.com/
+[travis2]: https://travis-ci.org/profile/
+[gh-cheat]: https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
+[py2py3]: http://ptgmedia.pearsoncmg.com/imprint_downloads/informit/promotions/python/python2python3.pdf
+[issue]: https://github.com/travis-ci/travis-ci/issues/2862
+[stack]: http://stackoverflow.com/questions/26299552/travis-sudo-is-disabled
