@@ -16,11 +16,23 @@ I have been using `Python 2.7` for 3 years and now it is time for me to distingu
 
 TravisCI is a continuous integration tool used to test the project. I have never used it before. In order to connect the private github repository with TravisCI, you have to go to [https://magnum.travis-ci.com/][travis1] instead of [https://travis-ci.org/profile/][travis2]. I have gone through the struggle of successfully build at travis-ci because of this `sudo: setuid root` error. This error occurs because the sudo access has turned off on TravisCI Docker side for student package. The fix is very simple by adding this `sudo: required` to `.travis.yml` file. I read the information about this error from [travis-ci issue][issue] and [stackoverflow][stack].
 
-##tip-of-the-week
+Even though it is only the first week of class, I have learned many practical things. Time really flies fast. In the end, I really think this class will be a worthwile experience for me. Thanks for reading!
+
+##tips-of-the-week
 
 * [learn git with this cheat sheet][gh-cheat]
+
+{% highlight text %}
+
+$ git status
+$ git add -A . #this will add all of the tracked and untracked files
+$ git commit -m "commit message"
+$ git push origin branch_name
+
+{% endhighlight %}
+
 * [Python-2 VS Python-3 cheat sheet][py2py3]
-* Add `sudo: required` to `.travis.yml` when you have `sudo: setuid root` error student package limitation
+* Add `sudo: required` to `.travis.yml` when you have `sudo: setuid root` error because of the student package limitation
 * If you already hosted your website using `<username>.github.io`, you can make a new repository for your blog and create a `gh-pages` branch to have your own blog hosting separately from your actual website. In addition, you can also create a github page for your project by doing the same thing! [Here's how!][gh]
 
 [travis1]: https://magnum.travis-ci.com/
