@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week3: {"error": disaster}"
+title:  "Week3: print(error == disaster) #True"
 date:   2015-06-28 18:06:16
 categories: posts
 ---
