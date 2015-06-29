@@ -18,7 +18,7 @@ I started using iPython notebook after failing the installation several times. H
 
 * Forming a study group, writing test questions, and taking each other's test
 * Using [gist.github][gist] to share your Ipython notebook so you don't have to put them in a repository
-* Using [nbviewer][nb] to view your Ipython notebook from gist [example][ex]
+* Using [nbviewer][nb] to view your Ipython notebook from gist: here is my [example][ex]
 
 [gist]: https://gist.github.com/
 [nb]: http://nbviewer.ipython.org/
