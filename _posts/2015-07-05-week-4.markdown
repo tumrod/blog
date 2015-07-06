@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Week4: The Beauty of Beautiful Soup"
+date:   2015-07-05 19:34:00
+categories: posts
+---
+Hello World,
+
+There was a test on Monday. I am really glad that I went to the study group and also helped writing practice test. Fortunately, a lot of materials Professor Downing covered on the test are what I have been prepared for. Mostly, implementation of different functions. Study group really helps me a lot and I highly recommend doing it.
+
+Now, I am super excited about our 3-phase project. We decided to do an epic starwar database called "IntergalacticDB" and our group name is starhub! I learned about Beautiful Soup from searching for a tool to scrape the data for our project. Yes, I am in charge of data scraping and modeling. I worked on middle-backend, like creating the models and defining routes but also creating some pages. I have to say that I learned so many things within these 3-4 days. I learned jQuery, javaScript, CSS, HTML, and of course Beautiful Soup! As you can guess, this post will be mostly about the Beautiful Soup.
+
+### What is Beautiful Soup?
+Beautiful Soup is a python library for pulling data out of HTML and XML files. It works great if you only knows the url of certain webpage. You can write a script that scraping a lot of information with Beautiful Soup. Do you see the beauty of it now? [Scraping the data can be easy!]
+
+### Installation
+If you have Python installed on your machine already, Beautiful Soup is really easy to install! You basically can just `pip install beautifulsoup4` Perhaps you might miss the first beauty, do you see another beauty of it now? [Super easy to install!]
+
+### Basic Beautiful Soup script
+Let's go to the meat on how to use beautiful soup. Here is a [documentation][doc].
+
+{% highlight text %}
+def print_soup(url):
+    r  = requests.get(url)          # passing in the url
+    data = r.text
+
+    soup = BeautifulSoup(data)
+    print(soup.prettify())          # print the whole html of that page
+    #print(soup.get_text())         # print only the text, excluding all of the html tags
+
+{% endhighlight %}
+
+The above code is really simple, yet powerful. However, there is more to beautiful soup! You can also get specific information by giving the tag/ attributes.
+
+{% highlight text %}
+def print_soup(url):
+    r  = requests.get(url)          # passing in the url
+    data = r.text
+    soup = BeautifulSoup(data)
+
+    # get all of the element that has <td class="infoboxcell"> </td>
+    for j in soup.find_all("td", { "class": "infoboxcell"}):
+        print(j.get_text().strip())
+
+    # get all of the element that has <meta content="" property="og:description"> tag and the meta content can be anything!
+    for i in soup.find_all({ "meta" : "content" }, {"property":"og:description"}) :
+       print(i["content"])      # here it will print the content
+
+{% endhighlight %}
+
+These are really basic Beautiful Soup. I hope you found the beauty of beautiful soup. At least for me, Beautiful Soup is easy  to install, it can scrape information from given url directly, and it is simple to write a script for.
+
+##tips-of-the-week
+
+* Beautiful Soup for scraping the data
+
+[doc]: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
