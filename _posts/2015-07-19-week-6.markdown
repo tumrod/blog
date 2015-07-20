@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Week6: IntergalacticDB phase III"
+date:   2015-07-19 22:14:00
+categories: posts
+---
+Hello World,
+
+On Monday, we learned more about sql and database, mostly subqueries. Though I experienced with sql and relational database from my data management class before, I now understand more about when and how to use subqueries properly. Subquery is really useful when we tried to `select` from different pools and find the intersection. Here is an example from the class:
+
+```
+select distinct sID
+    from Apply
+    where
+        (major = 'CS')
+        and
+        sID not in (select sID from Apply where major = 'EE');
+```
+
+On Wednesday, we have the developers from Atlassian as special peakers. They talked about how the projects they have been working on using different tools Atlassian provided. I am quite familiar with bitbucket, one of their product similar to github. I used bitbucket last semester for my Operation System projects. I like the clean web interface and how we can see each other's commit on a sidebar notification. In my opinion, github is great for open-source project; bitbucket is better for private repository.
+
+On Friday, we learned about Regular Expression in Python. I have encountered `re` before, especially when using split(). However, I only split by either tab-delimited or space-delimited. Now, I know that we can split by different constraints, for example, re.split("^a", s) is splitting by a in the beginning of the string. Other than `re.split()`, regular expression also has other useful methods such as `re.search()` and `re.sub()`.
+
+Our project is going well. We are technically done with the last phase of our project. On the one hand, I mostly worked as a backend developer, like scraping the data, making the database models, and Rackspace's server configuration (with nginx and gunicorn). On the other hand, I got to work on other group's API and the about page. Frontend required the creative side of my brain. Backend required the logical side. I found backend development challenging and interesting to learn and understand, even though a lot of things magical to me. Frontend is like painting, which is one of my hobby. I found it a little bit relaxing and fun.
+
+Here is our website: [intergalacticdb][project]. It is a mini-StarWar Database of main characters, species, and planets.
+
+##tips-of-the-week
+* If you are working with json and using Chrome, you should try Chrome's extension called `JSON Formatter`, it automatically reformatted the JSON file into different levels of indentation. It becomes handy when working with GET call.
+
+[project]: https://intergalacticdb.me/
