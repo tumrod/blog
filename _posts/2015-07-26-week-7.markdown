@@ -30,9 +30,7 @@ Here is the summary of the class:
     The first two projects are individual projects. They really prepared you well for the 3-phase project since they touched on different basic tools, like Github, Travis CI, unittest, and coverage. The other 3 projects are actually one large project with different phases. Yes, they are built on top of each other. Yes, they are group project. One tip: Choose your teammate wisely by forming a group with different skillsets of people. I am lucky to have great teammates. They have taught me different tools I can use. They are great collaborators. We did well for the projects because we started really early and attempted to finish before the due date about 1-2 days. 
 
 * Tests: 2 exams
-    The first exam is mostly implementation of different functions we have learned in class. Professor Downing did give the hint on his review day. He also allowed an 8 x 11 note for the test (with no code). Tips: Forming a study group with other students, Making the practice exams and taking others' practice exams. I definitely learn more when I tried to explain something to other people. 
-
-    We are going to have a second exam tomorrow.
+    The first exam is mostly implementation of different functions we have learned in class. Professor Downing did give the hint on his review day. He also allowed an 8 x 11 note for the test (with no code). Tips: Forming a study group with other students, Making the practice exams and taking others' practice exams. I definitely learn more when I tried to explain something to other people. We are going to have a second exam tomorrow. The study group really helps me understanding different concepts better. 
 
 Overall, I really like the class. Professor Downing is a good lecturer. The course itself is really well organized and structured. I definitely recommend you to take this class. You will learn differet tools for Software Development. The class is not an easy class but it teaches you several things. It is definitely one of the class where you can apply everything you learned from class to your own personal projects. Take it. Experience it. Learn it. 
 
